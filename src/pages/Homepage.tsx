@@ -3,7 +3,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import {Mainbutton} from "@/Mainbutton";
 import {NextPage} from "next";
-import {Grid} from "@mui/material";
+import {Grid, Link} from "@mui/material";
 import TravelExploreOutlinedIcon from '@mui/icons-material/TravelExploreOutlined';
 import SavingsOutlinedIcon from '@mui/icons-material/SavingsOutlined';
 import NotesOutlinedIcon from '@mui/icons-material/NotesOutlined';
@@ -22,7 +22,7 @@ const Homepage: NextPage = (props) => {
                 "NAJDI SI BRIGÁDNÍKA SVÝCH SNŮ"
             </Typography>
             <Box sx={{display: 'flex', justifyContent: 'center', paddingTop: 10}}>
-                <Mainbutton content="Napiš svůj inzerát"/>
+                <Link href="Inzerat" underline="none"><Mainbutton content="Napiš svůj inzerát"/></Link>
                 <Mainbutton content="Najdi Brigádníka"/>
             </Box>
 

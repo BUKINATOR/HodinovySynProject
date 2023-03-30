@@ -7,6 +7,7 @@ import AccountCircle from '@mui/icons-material/AccountCircle';
 import MenuItem from '@mui/material/MenuItem';
 import Menu from '@mui/material/Menu';
 import {NextPage} from "next";
+import {Link} from "@mui/material";
 
 
 export const Header: NextPage = (props) => {
@@ -65,10 +66,12 @@ export const Header: NextPage = (props) => {
                             >
                                 <MenuItem onClick={handleClose}>Profil</MenuItem>
                                 <MenuItem onClick={handleClose}>Odhlásit se</MenuItem>
-                                <MenuItem onClick={handleClose}>Přepnout účet</MenuItem>
                             </Menu>
                         </div>
                     )}
+                    <Link href="Login" underline="hover" sx={{display: 'flex', color: 'black', justifyContent:'end', padding: 2}}>
+                        {'Přihlásit se'}
+                    </Link>
                 </Toolbar>
             </AppBar>
         </Box>
